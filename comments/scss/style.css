@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  font-family: system-ui;
+}
+
+#header .nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: #2363de;
+  box-shadow: 0px 0px 5px 0px #717171;
+}
+#header .nav .tag {
+  margin: 0 40px;
+}
+#header .nav .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+#header .nav .right {
+  display: flex;
+  font-size: 20px;
+}
+#header .nav .right .button {
+  cursor: pointer;
+}
+#header .nav .right .user {
+  margin-right: 40px;
+}
+
+.main {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  margin-top: 20px;
+}
+.main .left {
+  width: 400px;
+  position: relative;
+}
+.main .left .image-container {
+  padding: 20px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+}
+.main .left .image-container .image {
+  width: 360px;
+  max-height: 300px;
+  object-fit: contain;
+}
+.main .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.main .right .reviewbox .review {
+  border: 1px solid #efefef;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 0;
+}
+.main .right .reviewbox .review .rating {
+  display: flex;
+}
+.main .right .reviewbox .review .rating .rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  background: #0d9a0d;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.main .right .reviewbox .review .rating .rate .icon {
+  margin-left: 4px;
+}
+.main .right .reviewbox .review .rating .title {
+  margin-left: 20px;
+  font-weight: 600;
+}
+.main .right .reviewbox .review .description {
+  margin: 10px 0;
+  color: #454545;
+}
+.main .right .reviewbox .review .user {
+  color: #101010;
+}
+.main .right .reviewbox .reviewbar {
+  border: 1px solid #efefef;
+  padding: 20px;
+}
+.main .right .reviewbox .reviewbar .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.main .right .reviewbox .reviewbar .header .title {
+  font-size: 20px;
+}
+.main .right .reviewbox .reviewbar .header .button {
+  padding: 10px 20px;
+  /* border: 1px solid #dedede; */
+  box-shadow: -1px 1px 4px 0px #b1b1b1;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.main .right .reviewbox .reviewbar .body {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+.main .right .reviewbox .reviewbar .body .icon {
+  margin-left: 10px;
+}
+.main .right .reviewbox .reviewbar .footer {
+  font-size: 15px;
+  color: #101010;
+}
+
+.star {
+  position: relative;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+.star .l1 {
+  position: absolute;
+  transform: rotateZ(-37deg);
+}
+.star .l2 {
+  position: absolute;
+  transform: rotateZ(37deg);
+}
+.star .l3 {
+  position: absolute;
+  transform: rotateZ(106deg);
+}
+
+.reviewmodal {
+  width: 500px;
+  height: 370px;
+  background: white;
+  border-radius: 10px;
+}
+.reviewmodal .header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 26px;
+  font-weight: 500;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.reviewmodal .header .close-button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reviewmodal .header .close-button:hover {
+  background: #efefef;
+}
+.reviewmodal .header .close-button .close {
+  width: 30px;
+  height: 6px;
+  background: #b1b1b1;
+  position: relative;
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+.reviewmodal .header .close-button .close::after {
+  content: "";
+  width: 6px;
+  height: 30px;
+  background: #b1b1b1;
+  display: block;
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  border-radius: 2px;
+}
+.reviewmodal .rating {
+  margin: 20px 20px 0;
+}
+.reviewmodal .rating .rating-input {
+  display: flex;
+}
+.reviewmodal .rating .rating-input .rating-star {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.reviewmodal .review-area {
+  padding: 10px;
+  margin: 20px 20px 0;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  resize: none;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  height: 100px;
+}
+.reviewmodal .review-title {
+  padding: 10px;
+  margin: 10px 20px 0;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+.reviewmodal .submit {
+  margin: 20px 20px 0;
+  padding: 10px 20px;
+  background: #1251c5;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+.modal .animate {
+  animation: modalanimate 0.1s linear forwards;
+}
+.modal .rev-animate {
+  animation: modalrevanimate 0.1s linear forwards;
+}
+
+@keyframes modalanimate {
+  0% {
+    transform: scale(0.8) translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes modalrevanimate {
+  100% {
+    transform: scale(0.8) translateY(100px);
+    opacity: 0;
+  }
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
