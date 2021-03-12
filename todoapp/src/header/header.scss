@@ -1,0 +1,26 @@
+.nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: #2363de;
+  box-shadow: 0px 0px 5px 0px #717171;
+  .tag {
+    margin: 0 40px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .right {
+    display: flex;
+    font-size: 20px;
+    .button {
+      cursor: pointer;
+    }
+    .user {
+      margin-right: 40px;
+    }
+  }
+}
