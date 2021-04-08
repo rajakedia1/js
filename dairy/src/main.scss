@@ -1,0 +1,22 @@
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	font-size: 18px;
+	background: #efefef;
+}
+.button {
+	width: 440px;
+    margin: auto;
+    background: #000088;
+    padding: 20px;
+    margin-bottom: 2px;
+    outline: none;
+    border: none;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}

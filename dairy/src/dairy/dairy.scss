@@ -1,0 +1,17 @@
+.entry {
+  width: 400px;
+  margin: auto;
+  background: #aaaaff;
+  padding: 20px;
+  margin-bottom: 2px;
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    /* padding: 10px 0; */
+    margin-bottom: 10px;
+  }
+  .date {
+    font-size: 14px;
+    color: #454545;
+  }
+}
